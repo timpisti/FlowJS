@@ -1,0 +1,14 @@
+{
+  "ComponentFetchURL": "https://example.com/components",
+  "apiBaseURL":"https://example.com/api",
+  "baseUrl": "/git2/Flowjs2/src/",
+  "Routes": {
+    "/": "home",
+    "/articles/:id": "articles",
+    "*": "not-found"
+  },
+  "DebounceTime": 200,
+  "CSPEnabled": false,
+  "ErrorLoggingEnabled": true,
+  "RealTimeUpdatesEnabled": false
+}

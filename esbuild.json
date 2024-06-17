@@ -1,0 +1,10 @@
+const esbuild = require('esbuild');
+
+esbuild.build({
+  entryPoints: ['src/main.js'],
+  bundle: true,
+  outfile: 'dist/main.js',
+  minify: true,
+  sourcemap: true,
+  watch: process.argv.includes('--watch'),
+}).catch(() => process.exit(1));

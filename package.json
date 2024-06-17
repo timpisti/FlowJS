@@ -1,0 +1,16 @@
+{
+  "name": "flowjs",
+  "version": "1.0.0",
+  "description": "FlowJS framework",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "rxjs": "^7.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.9"
+  }
+}
