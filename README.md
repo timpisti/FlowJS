@@ -1,5 +1,5 @@
-# FlowJS
-FlowJS is a robust and flexible TypeScript framework designed to programmatically load and manage external nested custom HTML components. It leverages esbuild for efficient building, RxJS for seamless communication between components, and includes built-in support for real-time updates using WebSockets and Server-Sent Events (SSE). FlowJS is designed to handle dynamic routing, lazy loading, and performance optimization, making it an ideal choice for modern web applications.
+# Flowwe JS
+Flowwe JS is a robust and flexible TypeScript framework designed to programmatically load and manage external nested custom HTML components. It leverages esbuild for efficient building, RxJS for seamless communication between components, and includes built-in support for real-time updates using WebSockets and Server-Sent Events (SSE). FlowJS is designed to handle dynamic routing, lazy loading, and performance optimization, making it an ideal choice for modern web applications.
 
 ## Key Features
 
