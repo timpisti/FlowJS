@@ -53,6 +53,12 @@ async function loadRoutedComponent(tagName, file) {
 
 // Function to preload essential components
 async function preloadEssentialComponents() {
+  if (!window.FlowJSConfig || !Array.isArray(window.FlowJSConfig.essentialComponents)) {
+    console.log('Essential components configuration is missing or invalid. Do you need preload components? Set it.');
+    return;
+  }
+
+  const essentialComponents = window.FlowJSConfig.essentialComponents;
   for (const component of essentialComponents) {
     await loadExternalComponent(component, `${window.FlowJSConfig.componentFetchUrl}${component}/${component}.js`);
   }
