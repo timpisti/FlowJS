@@ -124,7 +124,7 @@ async function initializeComponents(root) {
 // Function to attach click event listeners to links
 function attachLinkListeners(root) {
   console.log('Attaching link listeners for root:', root);
-  root.querySelectorAll('a[href]:not([data-link-listener])').forEach(anchor => {
+  root.querySelectorAll('a[href]:not([data-link-listener]):not([target="_blank"])').forEach(anchor => {
     anchor.setAttribute('data-link-listener', 'true');
     anchor.addEventListener('click', (event) => {
       event.preventDefault();
